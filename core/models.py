@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Management(models.Model):
+    name = models.CharField(max_length=100, verbose_name='ФИО')
+    description = models.TextField()
+    photo = models.ImageField( null=True, blank=True)
+
+
